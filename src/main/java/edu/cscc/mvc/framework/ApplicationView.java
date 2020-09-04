@@ -24,6 +24,8 @@ public abstract class ApplicationView implements MVCView {
     /**
      * Helper method for specifying a route with no parameters.
      * See {@link ApplicationView#route(String, String, Map)}.
+     * @param resource The requested resource.
+     * @param action The requested action.
      */
     protected void route(String resource, String action) {
         route(resource, action, new HashMap());

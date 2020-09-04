@@ -27,8 +27,10 @@ public class RequestRouter {
      * that starts with the request.resource value and ends with the word "Controller". It then
      * looks for a method on that controller that matches the request.action name. This combination
      * of resource and action will be invoked by the {@link MVCContext} when the request is processed.
+     *
+     * Runtime Exceptions: {@link RoutingException} when a controller class and accompanying method cannot be found.
+     *
      * @param request The {@link Request} to be processed.
-     * @throws {@link RoutingException} when a controller class and accompanying method cannot be found
      * based on the request.
      */
     public void onRequest(Request request) {

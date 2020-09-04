@@ -18,6 +18,11 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.0'
 }
 
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
 test {
     // Use junit platform for unit tests
     useJUnitPlatform()
